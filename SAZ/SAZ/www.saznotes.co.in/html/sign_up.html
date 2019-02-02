@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In SAZ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/sign_up.css">
+</head>
+<body>
+	<div class="wrapper">
+  <div class="logo">
+  	<a href="../index.html">
+  	 <img src="../logo/saz_icon.png" height="100" width="220">
+  	</a>
+</div>
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Articles</a>
+        </li>
+        <li>
+          <a href="#">quiz</a>
+        </li>
+        <li>
+          <a href="#">Academics</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="signup_content">
+      <h2>Sign Up</h2>
+    	<div class="formfill">
+        <form action="../php/result.php" method="post">
+    		<input type="text" name="name" placeholder="name" size="20" maxlength="20" required><br>
+    		<input type="text" name="mobile" placeholder="mobile no" size="10" maxlength="10" required><br>
+    		<input type="email" name="email" placeholder="name@example.com" size="30" maxlength="30" required><br>
+    		<p><i><span style="color:grey";>This will be your new SAZ ID</span></i></p>
+    		<input type="password" name="password" placeholder="password" size="20" maxlength="20" required><br>
+    		<input type="password" name="cpassword" placeholder="confirm password" size="20" maxlength="20" required><br>
+    		<label><b>EDUCATION DETAILS</b></label><br>
+    		<input type="text" name="college" placeholder="college" size="40" maxlength="40" required><br>
+    		<select name="dept" required>
+    			<option value="-" disabled>--choose your dept--</option>
+    			<option value="BCA">BCA</option>
+    			<option value="CS">Computer Science</option>
+    			<option value="CT">Computer Technology</option>
+    			<option value="IT">Information Technology</option>
+    			<option value="O" selected>Other Science Streams</option>
+    		</select><br>
+    		<select name="year" required>
+    			<option value="-" disabled>--Choose Your Year--</option>
+    			<option value="I">I</option>
+    			<option value="II">II</option>
+    			<option value="III">III</option>
+    			<option value="O" selected>None</option>
+    		</select><br>
+    		<label><b>CITY / STATE</b></label><br>
+    		<input type="text" name="city" placeholder="city" size="15" maxlength="15" required><br>
+    		<select name="state" required>
+    			<option value="-" disabled>--Choose Your State--</option>
+    			<option value="Tamilnadu">Tamilnadu</option>
+    			<option value="Kerala">Kerala</option>
+    			<option value="Karnataka">Karnataka</option>
+    			<option value="Others" selected>Others</option>
+    		</select><br><hr>
+    	<div class="target">
+    		<input type="submit" name="#" value="Sign In"><br>
+        </div>
+    </form>
+        </div>
+    </section>
+
+<footer>
+    	<div class="copy">
+      <p><i>Copyrights &copy; 2019. All rights reserved.</i></p>
+      <p><i>Designed & Code By</i></p>
+      <p><i>3dts</i></p>
+    </div>
+    </footer>
+</body>
+</html>
